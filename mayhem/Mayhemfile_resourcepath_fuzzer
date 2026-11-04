@@ -1,0 +1,8 @@
+project: savantenvs/firebase-ios-sdk
+target: resourcepath_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/resourcepath_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/resourcepath_fuzzer
+    libfuzzer: true

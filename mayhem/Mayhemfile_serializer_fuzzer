@@ -1,0 +1,8 @@
+project: savantenvs/firebase-ios-sdk
+target: serializer_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/serializer_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/serializer_fuzzer
+    libfuzzer: true
